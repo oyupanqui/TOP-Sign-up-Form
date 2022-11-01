@@ -1,0 +1,25 @@
+* {
+    font-family: 'Dancing Script';
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(background.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%
+}
+
+/*
+.main-image-container {
+    margin: 0;
+    padding: 0;
+}
+
+.main-image {
+    object-fit: cover;
+    height: 100vh
+}
+*/
