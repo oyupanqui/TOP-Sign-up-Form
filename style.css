@@ -1,26 +1,102 @@
 * {
-    font-family: 'Dancing Script';
+    font-family: 'Questrial';
+}
+
+@font-face {
+    font-family: Norse-Bold;
+    src: url(Norse-Bold.otf)
 }
 
 body {
     margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+}
+
+.image-container {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    justify-content: space-between;
     background-image: url(background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
     height: 100vh;
-    width: 100vw;
-}
-
-.test:hover {
-    opacity: 1
-}
-
-.test {
-    font-size: 36px;
-    color: red;
-    margin-top: 25px;
+    width: 400px;
     text-align: center;
-    opacity: 0;
-    transition: opacity 1s
-}​
+}
+
+.logo-panel {
+    margin-top: 20vh;
+    padding: 20px;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.3);
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: Norse-Bold;
+    font-size: 6rem;
+    color: white;
+}
+
+.logo {
+    width: 100px;
+}
+
+.credit {
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 2vh;
+}
+
+.credit a {
+    color: white
+}
+
+.form-container {
+    display: flex;
+    flex: 5;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: white;
+    height: 100vh;
+    animation: fadeIn 3s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+.upper-panel {
+    font-size: 1.6em;
+    font-weight: bold;
+    padding: 30px;
+    text-align: center;
+}
+
+.middle-panel {
+    background-color: greenyellow;
+    padding: 30px;
+    font-size: 1.2em;
+}
+
+.inputs {
+    display: block;
+}
+
+.inputs > div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 70px;
+    row-gap: 30px;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 0.8;}
+}
 
